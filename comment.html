@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <body>
+    <head>
+    <meta charset="utf-8">
+    <title>comment box</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="comment-style.css">
+    
+    </head>
+
+      <h2>Project Number 3</h2>
+      <h3>JavaScript comment box example</h3>
+
+      <form id="myForm">
+         Name: <input id="userName" type="text" name="name">
+         <br><br>
+         Email : <input id="userEmail" type="email" name="email" placeholder="name@workplace.com">
+         <br><br>
+         
+         <textarea id="userComment" rows="4" cols="50" ; name="comment"></textarea>
+         <br><br>
+         <p></p><span id="counter"> 0 </span> /140</p>
+         <button>Submit</button>
+      </form>
+   
+      
+      <h5>Submitted data :</h5>
+      
+      <div id="data">
+         <ul id="submission">
+            <li> 
+               <span id="name" class="submission"></span>
+               
+               <span id="email"class="submission"></span>
+                  
+               <span id="comment"class="submission"></span>
+            </li>
+         </ul>
+   </div>
+   <script src="comment.js"> </script>
+
+   </body>
+</html>
