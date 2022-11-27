@@ -24,6 +24,14 @@ const addComment = document.forms['myForm'];
 
 addComment.addEventListener('submit',function(e){
     e.preventDefault();
+    var x = addComment["name"].value;
+    var y = addComment["email"].value;
+    if(x == ""|| y == "") {
+        alert("name and email must be filled out");
+      } else{
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    
     var name = addComment.querySelector('input[type="text"]').value;
     var email = addComment.querySelector('input[type="email"]').value;
     var commenter = comment.value;
@@ -51,6 +59,9 @@ list.appendChild(li);
 
 //clear the form after submission
 document.forms[0].reset(); 
+      };
+   
+    
 });
 
 
