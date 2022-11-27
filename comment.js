@@ -11,9 +11,8 @@ function countChar (){
 
 //color comment box when limit is reached
     if (characters.length > 140){
-        document.getElementById("userComment").style.borderColor= "red";
-        document.getElementById("userComment").style.border= "solid";
-    } else if (characters.length<140){
+        document.getElementById("userComment").style.borderColor = "red";
+    } else if (characters.length < 140){
         document.getElementById("userComment").style.borderColor= "green";
     };
 
