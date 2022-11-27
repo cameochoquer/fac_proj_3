@@ -1,16 +1,38 @@
 body{
     font-family: futura;
 }
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  margin-top: 10%;
+  margin-left: 10%;
+  max-width: fit-content;
+}
+
+
+
+.flex-child{
+  width:  400px;
+  text-align: left;
+}
+
+.submitted{
+  width:  400px;
+}
+
 input[type="text"],
 input[type="email"],
 
 textarea{
     border: 1px solid grey;
     font-family: futura;
+    max-width: 400px;
 }
 
 input:invalid {
-    border: 1px dashed red;
+    border: 1px solid red;
     font-family: comic-sans;
   }
 
@@ -36,6 +58,6 @@ input[type=email]:focus, textarea:focus {
   li {
 margin: 10px;px
   }
-.submission{
-  display:block;
-}
+  .submission{
+    display:block;
+  }
