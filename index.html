@@ -10,36 +10,48 @@
 
     <body>
       
-      <h2>Project Number 3</h2>
-      <h3>JavaScript comment box example</h3>
+<div class="container">
 
-      <form id="myForm">
-         Name: <input id="userName" type="text" name="name">
-         <br><br>
-         Email : <input id="userEmail" type="email" name="email" placeholder="name@workplace.com">
-         <br><br>
-         
-         <textarea id="userComment" rows="4" cols="50" ; name="comment"></textarea>
-         <br><br>
-         <p></p><span id="counter"> 0 </span> /140</p>
-         <button>Submit</button>
-      </form>
-   
-      
-      <h5>Submitted data :</h5>
-      
-      <div id="data">
-         <ul id="submission">
-            <li> 
-               <span id="name" class="submission"></span>
+      <div class="flex-child">
+         <h2>Project Number 3</h2>
+         <h3>JavaScript comment box example</h3>
+      </div>
+
+         <div class="flex-child">
+            <form id="myForm">
+               Name: <input id="userName" type="text" name="name">
+               <br><br>
+               Email : <input id="userEmail" type="email" name="email" placeholder="name@workplace.com">
+               <br><br>
                
-               <span id="email"class="submission"></span>
-                  
-               <span id="comment"class="submission"></span>
-            </li>
-         </ul>
-   </div>
-   <script src="comment.js"> </script>
+               <textarea id="userComment" rows="4" cols="50" ; name="comment"></textarea>
+               <br><br>
+               <p></p><span id="counter"> 0 </span> /140</p>
+               <button>Submit</button>
+            </form>
+         </div>
+   
+      <br>
 
+      
+      
+      <div id="data" class="submitted">
+         <h5>Submitted data :</h5>
+      </div>
+         
+         <div class="submitted">
+            <ul id="submission">
+               <li> 
+                  <span id="name" class="submission"></span>
+                  
+                  <span id="email"class="submission"></span>
+                     
+                  <span id="comment"class="submission"></span>
+               </li>
+            </ul>
+         </div>
+</div>
+
+   <script src="comment.js"> </script>
    </body>
 </html>
