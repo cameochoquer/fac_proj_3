@@ -10,9 +10,13 @@ function countChar (){
     counter.innerText = characters.length
 
 //color comment box when limit is reached
-    if (characters.length>140){
+    if (characters.length > 140){
         document.getElementById("userComment").style.borderColor= "red";
+        document.getElementById("userComment").style.border= "solid";
+    } else if (characters.length<140){
+        document.getElementById("userComment").style.borderColor= "green";
     };
+
 };
 
 //when submit is clicked get the values from the boxes
@@ -44,7 +48,9 @@ li.appendChild(newName);
 li.appendChild(newEmail);
 li.appendChild(newComment);
 list.appendChild(li);
-   
+
+//clear the form after submission
+document.forms[0].reset(); 
 });
 
 
